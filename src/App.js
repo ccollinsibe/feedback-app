@@ -15,21 +15,21 @@ function App(){
         <div className="container">
             <h1>{title}</h1>
             <p>{body}</p>
-            {showComments ? ( <div className="comments">
+            {showComments && ( <div className="comments">
                 <h3>Comments ({comments.length})</h3>
                 <ul>
                     {comments.map((x,index)=>{
                        return <li key={index}>{x.text}</li>
                     })}
                 </ul>
-            </div>): null} 
+            </div>)} 
             <br/>
             {5 + 5}
             <br/>
             {Math.random() * 5 + 5}
             <h3>{title.toUpperCase()}</h3>
         </div>
-        //changed 'no' to null
+        //Used double ampersand and eliminated the null
     )
 }
 
