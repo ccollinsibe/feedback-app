@@ -6,7 +6,8 @@ function App(){
         {id:2, text: 'Comment Two'},
         {id:3, text: 'Comment Three'}
     ]
-    const loading = true
+    const loading = false
+    const showComments = false
 
     if (loading) return <h1>Loading...</h1>
 
@@ -14,6 +15,8 @@ function App(){
         <div className="container">
             <h1>{title}</h1>
             <p>{body}</p>
+            {showComments ? 'yes': 'no'}
+            <br/>
             {5 + 5}
             <br/>
             {Math.random() * 5 + 5}
