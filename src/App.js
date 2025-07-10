@@ -7,7 +7,7 @@ function App(){
         {id:3, text: 'Comment Three'}
     ]
     const loading = false
-    const showComments = false
+    const showComments = false //Change to true or false
 
     if (loading) return <h1>Loading...</h1>
 
@@ -15,22 +15,21 @@ function App(){
         <div className="container">
             <h1>{title}</h1>
             <p>{body}</p>
-            {showComments ? 'yes': 'no'}
-            <br/>
-            {5 + 5}
-            <br/>
-            {Math.random() * 5 + 5}
-            <h3>{title.toUpperCase()}</h3>
-            <div className="comments">
+            {showComments ? ( <div className="comments">
                 <h3>Comments ({comments.length})</h3>
                 <ul>
                     {comments.map((x,index)=>{
                        return <li key={index}>{x.text}</li>
                     })}
                 </ul>
-            </div>
+            </div>): null} 
+            <br/>
+            {5 + 5}
+            <br/>
+            {Math.random() * 5 + 5}
+            <h3>{title.toUpperCase()}</h3>
         </div>
-    
+        //changed 'no' to null
     )
 }
 
