@@ -1,4 +1,4 @@
-function Header({text}){
+function Header({text = "Feedback UI"}){
     return (
         <header>
             <div className="container">
