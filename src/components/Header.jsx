@@ -1,7 +1,7 @@
-function Header({text = "Feedback UI"}){
+function Header({text = "Feedback UI", bgColor, textColor}){
     const headerStyles = {
-        backgroundColor: "blue", 
-        color: "yellow"
+        backgroundColor: bgColor, 
+        color: textColor
     }
 
     return (
