@@ -1,6 +1,11 @@
 function Header({text = "Feedback UI"}){
+    const headerStyles = {
+        backgroundColor: "blue", 
+        color: "yellow"
+    }
+
     return (
-        <header style={{backgroundColor: "blue", color: "red"}}>
+        <header style={headerStyles}>
             <div className="container">
                 <h2>{text}</h2>
             </div>
