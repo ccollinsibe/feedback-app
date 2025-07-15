@@ -1,4 +1,4 @@
-function Card({children, reverse=true})
+function Card({children, reverse=false})
 {
     // return(
     //     <div className={`card ${reverse && 'reverse'}`}>{children}</div>
