@@ -14,7 +14,7 @@ function FeedbackList({feedback, handleDelete}){
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}>
-                return <FeedbackItem key={item.id} item={item} 
+                <FeedbackItem key={item.id} item={item} 
                 handleDelete={handleDelete}/>
                 </motion.div>
             ))}
